@@ -4,7 +4,7 @@ This repository contains code for the [In-Situ Melt Pool Characterization via Th
 ](https://doi.org/10.1016/j.jmapro.2025.03.123)-a framework leverages self-supervised learning on large volumes of unlabeled thermal melt pool data using a state-of-the-art Vision Transformer-based Masked Autoencoder (MAE). In real-life manufacturing settings,labeling such large datasets accurately is often challenging and expensive, leading to a scarcity of labeled datasets. Thus this framework addresses the challeges associated with the huge unlabeled thermal dataset of melt pool with limited labels. This pretraining step enables the model to learn highly representative spatial embeddings. We then apply transfer learning to fine-tune the MAE encoder on a smaller labeled dataset for melt pool anomaly classification. To evaluate the effectiveness of our approach, we explore two classifier designs: (1) a Vision Transformer (ViT) classifier utilizing the fine-tuned MAE encoder weights, and (2) a hybrid model combining the frozen MAE encoder with an MLP head for downstream classification.
 
 ##  Framework Overview
-![The proposed framework](images/mae_encoder.png)
+![The proposed framework](image/mae_encoder.png)
 
 ##  Repository Contents
 
@@ -33,12 +33,12 @@ This repository contains code for the [In-Situ Melt Pool Characterization via Th
 
    ```bash
    python mae_mlp_class_6_fold.py \
-  --csv_file /folder/labels.csv \
-  --image_folder /folder/images \
-  --mae_weights_path /folder/best_mae_vit_model.pth \
-  --save_dir /folder/mlp_mae_class_6fold \
-  --epochs 100 \
-  --batch_size 32
+      --csv_file /folder/labels.csv \
+      --image_folder /folder/images \
+      --mae_weights_path /folder/best_mae_vit_model.pth \
+      --save_dir /folder/mlp_mae_class_6fold \
+      --epochs 100 \
+      --batch_size 32
    ```
 
 3. **ViT Classifier Fine-tuning from MAE Weights**
