@@ -60,7 +60,7 @@ For each fold:
 ### 🔧 Install via:
 
 ```bash
-pip install torch torchvision transformers scikit-learn matplotlib pillow
+pip install torch torchvision transformers scikit-learn matplotlib pillow timm==0.4.5
 ```
 
 ## 📄 License
