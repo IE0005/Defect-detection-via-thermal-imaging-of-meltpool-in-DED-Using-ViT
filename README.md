@@ -6,7 +6,7 @@ In real-life manufacturing settings, labeling such large datasets accurately is 
 
 To evaluate the effectiveness of our approach, we explore two classifier designs:
 1. A Vision Transformer (ViT) classifier utilizing the fine-tuned MAE encoder weights
-2. A hybrid model combining the frozen MAE encoder with an MLP head for downstream classification
+2. Thefine-tuned  MAE encoder with an MLP head for downstream classification
 
 ## 🧠 Framework Overview
 
