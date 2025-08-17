@@ -54,8 +54,6 @@ This repository contains code for the [In-Situ Melt Pool Characterization via Th
       --lr 1e-4 \
       --num_folds 6 \
       --fold_start 1
-
-
    ```
 ## Output 
 For each fold:
