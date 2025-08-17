@@ -45,15 +45,15 @@ This repository contains code for the [In-Situ Melt Pool Characterization via Th
 
    ```bash
   python vit_class_cross_val.py \
-  --image_dir /path/to/images \
-  --label_csv /path/to/labels.csv \
-  --mae_weights_path /path/to/mae_model.pth \
-  --output_dir ./vit_cross_val_outputs \
-  --epochs 100 \
-  --batch_size 32 \
-  --lr 1e-4 \
-  --num_folds 6 \
-  --fold_start 1
+      --image_dir /path/to/images \
+      --label_csv /path/to/labels.csv \
+      --mae_weights_path /path/to/mae_model.pth \
+      --output_dir ./vit_cross_val_outputs \
+      --epochs 100 \
+      --batch_size 32 \
+      --lr 1e-4 \
+      --num_folds 6 \
+      --fold_start 1
 
 
    ```
